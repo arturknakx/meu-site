@@ -1,0 +1,139 @@
+* {
+    /* Parâmetros gerais para o documento */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #0d475a;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 45px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.navMenu ul {
+    /* Usa flexbox para layout flexível */
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.navMenu li {
+    /* Espaçamento dos botões do menu */
+    margin: 5px 5px 5px;
+}
+.navMenu a {
+    /* Estilo dos botões do menu */
+    background-color: #a0c6d3;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.navMenu a:hover {
+    background-color: hsl(0, 4%, 11%);
+}
+
+main {
+    /* Estilo de todo conteúdo fora de <header> e <footer> */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.colunaInfo {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.colunaInfo img {
+    /* Customização de foto do <aside> */
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.infos {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 10px;
+}
+#nome {
+    text-align: center;
+    font-size: 30px;
+}
+
+.colunaConteudo {
+    flex: 2;
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    background-color: #0d475a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Modifica layout para dispositivos com menor resolução */
+@media (max-width: 768px) {
+    .navMenu ul {
+        /* Altera exibição do menu para coluna */
+        flex-direction: column;
+    }
+
+    .navMenu li {
+        margin: 5px 0;
+    }
+
+    main {
+        /* Altera exibição do body para coluna */
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+
+    .colunaInfo {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        /* Faz com que o footer apareça sempre no final da página */
+        position: static;
+        margin-top: 20px;
+    }
+}
+

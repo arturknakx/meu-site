@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Artur Knak</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 2%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Título superior -->
+        <h1>Portfólio</h1>
+        <!-- Menu -->
+        <nav class="navMenu">
+            <ul>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Coluna lateral com foto e informações -->
+        <aside class="colunaInfo">
+            <img src="artur.jpg" alt="Foto Artur Knak">
+            <ul class="infos">
+                <li id="nome"><strong>Artur Knak</strong></li>
+                <br>
+                <li><strong>Idade:</strong> 21 anos (24/02/2003)</li>
+                <li><strong>Cidade:</strong> Santa Cruz do Sul - RS</li>
+            </ul>
+        </aside>
+        <!-- Conteúdo central da página -->
+        <section class="colunaConteudo">
+            <h2>Agora, alguns projetos:</h2>
+            <h5>Coisinhas que me orgulho de ter desenvolvido!</h5>
+            <br>
+            <!-- Primeiro projeto -->
+            <div id="projeto1">
+                <h4>Protótipo de App de Adoção para Animais</h4>
+                <p>Durante a disciplina "Fundamento de Design de Sistemas" na UNINTER, tive a possibilidade de
+                    desenvolver um protótipo de média fidelidade para um app de adoção de animais.
+                </p>
+                <br>
+                <img src="app adoção.png" alt="Protótipo App de Adoção">
+                <br><br>
+                <a href="https://www.figma.com/proto/cEavOFNVV1RVYN7aPRwdTB/App-Ado%C3%A7%C3%A3o?node-id=5-381&t=eqVo1TzmyWKoKRIP-1" 
+                target="_blank" rel="noopener noreferrer">Visite aqui o protótipo.</a> <!-- Abre link em nova aba -->
+            </div>
+            <br>
+            <!-- Segundo projeto -->
+            <div id="projeto2">
+                <h4>Projeto Simples de Livraria em Python</h4>
+                <p>Como parte de um trabalho, desenvolvi um código em Python que permite cadastrar, remover
+                    ou consultar livros. Por se tratar de um projeto simples, assim que o código deixa de ser
+                    executado, a lista de livros cadastrados é resetada. Apesar disso, mostra o poder da
+                    linguagem Python, transformando poucas linhas de código em algo funcional!
+                </p>
+                <br>
+                <a href="https://github.com/arturknakx/livrariaSimplesPy" 
+                target="_blank" rel="noopener noreferrer">Veja aqui o código.</a> <!-- Abre link em nova aba -->
+            </div>
+            <br>
+            <!-- Terceiro projeto -->
+            <div name="projeto3">
+                <h4>Python - O seu primeiro código</h4>
+                <p>Projeto que pretende ensinar o básico de Python de forma simples e descontraída,
+                    visando trazer novas pessoas para o mundo da programação. Em desenvolvimento.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>Todo o conteúdo disposto aqui está sendo
+            desenvolvido como um trabalho de faculdade.
+            Desconsidere erros.</p>
+    </footer>
+</body>
+</html>

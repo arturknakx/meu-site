@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Artur Knak</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            /* Pequena modificação no tamanho do texto e centralização */
+            font-size: 25px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        // Informa via alert que o formulário foi enviado
+        document.addEventListener('DOMContentLoaded', () => {
+            const botaoEnviar = document.getElementById('botaoEnviar');
+            botaoEnviar.addEventListener('click', () => {
+                alert('Formulário enviado!');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <!-- Título superior -->
+        <h1>Contato</h1>
+        <!-- Menu -->  
+        <nav class="navMenu">
+            <ul>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Conteúdo da página-->
+        <section class="colunaConteudo">
+            <br><br>
+            <form action="" method="post">
+                <!-- Input para nome -->
+                <div>
+                    <label for="nome">Seu nome:</label>
+                    <br>
+                    <input type="text" id="nomeCampo" name="nome"
+                    placeholder="Digite seu nome aqui.">
+                </div>
+                <br>
+                <!-- Input para e-mail -->
+                <div>
+                    <label for="email">Seu e-mail:</label>
+                    <br>
+                    <input type="email" id="emailCampo" name="nome"
+                    placeholder="Digite seu e-mail aqui.">
+                </div>
+                <br>
+                <!-- Input para mensagem -->
+                <div>
+                    <label for="mensagem">Sua mensagem:</label>
+                    <br>
+                    <textarea id="mensagemCampo" name="mensagem" rows="10" cols="50"></textarea>
+                </div>
+                <br>
+                <button type="button" id="botaoEnviar" style="height:50px;width:200px">
+                    Enviar</button>
+            </form>
+            <br><br><br><br>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>Todo o conteúdo disposto aqui está sendo
+            desenvolvido como um trabalho de faculdade.
+            Desconsidere erros.</p>
+    </footer>
+</body>
+</html>
